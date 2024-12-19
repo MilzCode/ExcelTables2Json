@@ -1,18 +1,21 @@
 {
   "name": "exceltables2json",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "Converts Tables from Excel files to JSON using ExcelJS.",
-  "main": "index.js",
-  "keywords": [
-    "excel",
-    "json",
-    "exceljs"
-  ],
-  "author": "Boris Sáez Milanez",
+  "main": "dist/index.js",
+  "exports": {
+    "require": "./dist/index.js"
+  },
+  "types": "index.d.ts",
   "license": "MIT",
   "dependencies": {
     "exceljs": "^4.4.0"
   },
-  "types": "index.d.ts",
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/preset-env": "^7.26.0"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist"
+  }
 }

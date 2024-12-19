@@ -1,3 +1,4 @@
+// exceltables2json.d.ts
 declare module "exceltables2json" {
   /**
    * Convierte una tabla de un archivo Excel a formato JSON.
