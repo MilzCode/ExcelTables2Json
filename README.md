@@ -2,6 +2,8 @@
 
 **ExcelTables2Json** es una librería que convierte tablas dentro de archivos Excel (.xlsx) en objetos JSON, permitiendo al usuario elegir entre dos formatos de salida: un arreglo de arreglos o un objeto donde las llaves son los nombres de las columnas.
 
+Esto utiliza la librera [ExcelJS](https://www.npmjs.com/package/exceljs) para leer el archivo Excel y extraer los datos de la tabla especificada. Y simplifica el proceso de extraer objetos tipo tablas de archivos Excel.
+
 ## 🚀 Características
 
 - Convierte una tabla específica en un archivo Excel a JSON.
@@ -36,7 +38,7 @@ const processExcel = async (file) => {
 };
 
 ```
-##Ejemplo de salida tipo 1
+## Ejemplo de salida tipo 1
 ```json
 {
   "data": [
@@ -47,7 +49,7 @@ const processExcel = async (file) => {
 }
 ```
 
-##Ejemplo de salida tipo 2
+## Ejemplo de salida tipo 2
 ```json
 {
   "columns": ["Header1", "Header2"],
@@ -58,3 +60,21 @@ const processExcel = async (file) => {
 }
 ```
 
+## 🌟 Contribuciones
+
+¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar esta librería o encuentras algún problema, por favor sigue estos pasos:
+
+1. **Haz un fork del proyecto** desde el repositorio oficial:  
+   [MilzCode/ExcelTables2Json](https://github.com/MilzCode/ExcelTables2Json).
+
+2. **Crea una nueva rama** para tu funcionalidad o corrección de errores:  
+   ```bash
+   git checkout -b nombre-de-tu-rama
+  ``
+3. **Haz un pull request** con tus cambios para que sean revisados.
+
+
+
+📂 Repositorio
+Encuentra el código fuente de este proyecto en GitHub:
+https://github.com/MilzCode/ExcelTables2Json
